@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        #main{
+            height: 845px;
+            width: 960px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 260px;
+        }
+        nav{
+            height: 40px;
+            position: relative;
+            background-color: rgb(236,222,237);
+        }
+        #nav_ul{
+            position: absolute;
+            display: flex;
+            width: 500px;
+            left: -50px;
+            top: 10px;
+        }
+        .nav_li{
+            list-style-type: none;
+        }
+        .nav_a{
+            text-decoration-line: none;
+
+        }
+        .nav_li :hover{
+            color: blue;
+        }
+        .nav_input{
+            position: absolute;
+            right: 30px;
+            display: flex;
+            top: 10px;
+        }
+        #s{
+            padding-right: 10px;
+        }
+        #se{
+            padding-right: 10px;
+        }
+        .nav_b{
+            background-color: blue;
+            color: white;
+            margin-left: 5px;
+            border-radius: 5px;
+        }
+        header{
+            height: 300px;
+            background-image: url(../img/banner.jpg);
+        }
+        section{
+            position: relative;
+            height: 425px;
+            width: 70%;
+            float: left;
+            background: linear-gradient(90deg,RGB(170,219,228), white, RGB(170,219,228))
+        }
+        #section_h1{
+            color: red;
+            text-align: center;
+            padding: 25px;
+        }
+        .section_p{
+            width: 37%;
+            float: left;
+            text-align: justify;
+            text-indent: 25px;
+            margin-left: 10px;
+        }
+        .section_c{
+            position: absolute;
+            width: 300px;
+            clear: both;
+            top: 70px;
+            right: 40px;
+        }
+        #section_p{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        #section_ip{
+            height: 28px;
+            border-radius: 8px;
+            width: 240px;
+        }
+        fieldset{
+            border-radius: 8px;
+            box-shadow: 1px 3px 3px black;
+
+        }
+        legend{
+            text-align: left;
+        }
+        button{
+            height: 27px;
+            box-shadow: 1px 3px 3px black;
+            border-radius: 7px;
+            margin-left: 50px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        aside{
+            height: 425px;
+            width: 30%;
+            border: 4px solid rgb(122, 127, 115);
+            float: left;
+        }
+        #aside_h1{
+            border-bottom: 2px dotted #b1154a;
+            text-align: center;
+            color: red;
+            text-shadow: 1px 3px 3px #d56339;
+            padding: 10px;
+        }
+        #aside_h2{
+            border-bottom: 2px dotted #b1154a;
+            text-align: center;
+            color: red;
+            text-shadow: 1px 3px 3px #d56339;
+            margin-top: -3px;
+        }
+        #aside_h3{
+            border-bottom: 2px dotted #b1154a;
+            text-align: center;
+            color: red;
+            text-shadow: 1px 3px 3px #d56339;
+            margin-top: -3px;
+        }
+        .img1{
+            width: 96%;
+            margin-top: 10px;
+            height: 94px
+        }
+        img{
+            width: 96%;
+            margin-top: 10px;
+            height: 100px
+        }
+        img :hover{
+            transform: rotate(45deg);
+        }
+        footer{
+            height: 80px;
+            clear: both;
+            background-color: RGB(203,204,102);
+        }
+        #footer_name{
+            font-size: 20px;
+            margin-top: 27px;
+            margin-left: 20px;
+            float: left;
+        }
+        #footer_class{
+            font-size: 20px;
+            margin-top: 27px;
+            margin-right: 20px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <ul id="nav_ul">
+                <li class="nav_li"><a href="" class="nav_a">HOME</a></li>
+                <li class="nav_li"><a href="" class="nav_a">ABOUT US</a></li>
+                <li class="nav_li"><a href="" class="nav_a">SERVICES</a></li>
+                <li class="nav_li"><a href="" class="nav_a">CONTACT</a></li>
+            </ul>
+            <div class="nav_input">
+                <p id="s">SEARCH: </p>
+                <input type="text" value="Search here..." id="se">
+                <input type="button" value="Go" class="nav_b">
+            </div>
+        </nav>
+        <header>
+            
+        </header>
+        <section>
+            <h1 id="section_h1">Introduction - Contact</h1> 
+            <div class="section_p">
+                <p>Quentin Tarantino’s latest movie, Once Upon a Time in Hollywood, 
+                    has a poster for us to Look At and Assume Things. It has Brad Pitt 
+                    and Leonardo DiCaprio with a vintage car, and the Hollywood sign in 
+                    the far background. This movie is set in 1969 so I am calling bullsh-t 
+                    on that Hollywood sign. By 1969, the sign was severely deteriorated, with 
+                    the “O” being broken so badly it looked like a “U”. That sign in the 
+                    background should be decayed. It’s a famous landmark, people will still 
+                    know what it is even if the “O” is f-cked up.</p>
+            </div>
+            <div class="section_c">
+                <fieldset>
+                    <legend>Information</legend>
+                    <p id="section_p">Name:</p>
+                    <input type="text" value="Your name" id="section_ip">
+                    <p id="section_p">Email: </p>
+                    <input type="text" value="Your email" id="section_ip">
+                    <p id="section_p">Gender:</p>
+                   <font size="4.5"> Male: </font><input type="radio" name="1" >
+                    <font size="4.5"> Female:</font><input type="radio" name="1"> <br>
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </fieldset>
+            </div>
+        </section>
+        <aside>
+            <div>
+                <h3 id="aside_h1">Caltalogue</h3>
+                <center><img src="../img/aside1.jpg" alt=""></center>
+                <h3 id="aside_h2">Services</h3>
+                <center><img src="../img/aside2.jpg" alt=""></center>
+                <h3 id="aside_h3">Voucher</h3>
+                <center><img src="../img/aside3.jpg" alt="" class="img1"></center>
+            </div>
+        </aside>
+        <footer>
+            <div id="footer_name">
+                <p>22695091 - Nguyễn Anh Tú</p>
+            </div>
+            <div id="footer_class">
+                DHCNTT18ATT - Công nghệ thông tin
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
